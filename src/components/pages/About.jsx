@@ -25,6 +25,7 @@ const About = () => {
             <a
               href="https://www.linkedin.com/in/juhahalmu/"
               target="_blank"
+              rel="noreferrer"
               data-tooltip="To my LinkedIn page"
               aria-label="to my linkedin page"
             >
