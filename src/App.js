@@ -1,85 +1,41 @@
-import { useEffect, useState } from 'react'
-import BarChart from './components/charts/BarChart.jsx'
-import LineChart from './components/charts/LineChart.jsx'
+import {
+  Routes,
+  Route
+} from "react-router-dom";
+//import Footer from './components/layouts/Footer'
+import Header from './components/layouts/Header'
+import ChartList from './components/layouts/ChartList'
+import About from './components/pages/About'
+import GithubCorner from "react-github-corner";
 
-
-function App() {
-
-  const [demoData, setDemoData] = useState({
-    datasets: [],
-  })
-  const [chartOptions, setChartOptions] = useState({})
-  const [chartType, setChartType] = useState()
-  const [chartId, setChartId] = useState()
-
-  useEffect(() => {
-
-    setChartType({
-      type: 'line'
-    })
-
-    setChartId({
-      id: 1
-    })
-
-    setDemoData({
-      labels: ['A', 'B', 'C', 'D'],
-      datasets: [
-        {
-          label: 'Labeli',
-          data: [50, 234, 90, 421],
-          backgroundColor: 'rgba(75, 192, 192, 0.2)',
-          borderColor: 'rgb(75, 192, 192)',
-          tension: 0.1,
-          borderWidth: 1,
-        },
-      ],
-    })
-
-    setChartOptions({
-      maintainAspectRatio: true,
-      responsive: false,
-      scales: {
-        y: {
-          beginAtZero: false,
-          fontColor: 'red',
-          fontSize: 21,
-          fontWeight: 800,
-        },
-
-      },
-    })
-  }, [])
-  //
+const App = () => {
+  const customHref = 'https://github.com/jhalmu/chart-sivut'
   return (
-    <article>
-      <header>
-        <nav>
-          <ul>
-            <li><a href="/" className="secondary">…</a></li>
-          </ul>
-          <ul>
-            <li><strong>Chart Thing</strong></li>
-          </ul>
-          <ul>
-            <li><a href="/" className="secondary">…</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div className="container" data-theme="light" >
-        <div className="grid">
-
+    <>
+      <GithubCorner
+        href={customHref}
+        bannerColor="#000"
+        octoColor="#fff"
+        size={4 + 'em'}
+        direction="right"
+      />
+      <article style={{ marginTop: 4 + 'em' }}>
+        <div className="container" data-theme="light">
           <div>
-            <BarChart datasetIdKey={chartId} type={chartType} options={chartOptions} chartData={demoData} />
-          </div>
-
-          <div>
-            <LineChart datasetIdKey={chartId} type={chartType} options={chartOptions} chartData={demoData} />
+            <Header />
+            <Routes>
+              <Route path='/' element={
+                <main>
+                  <ChartList />
+                </main>
+              }>
+              </Route>
+              <Route path='/about' element={<About />} />
+            </Routes>
           </div>
         </div>
-      </div>
-      <footer></footer>
-    </article>
+      </article>
+    </>
   )
 }
 
