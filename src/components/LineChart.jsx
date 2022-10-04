@@ -6,8 +6,8 @@ import '../index.css'
 
 
 
-function LineChart({ chartWidth, chartHeight, chartData, chartOptions }) {
-  return <Line width={chartWidth} height={chartHeight} data={chartData} options={chartOptions} />
+function LineChart({ chartData, chartOptions }) {
+  return <Line data={chartData} options={chartOptions} />
 }
 
 export default LineChart

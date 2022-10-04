@@ -1,10 +1,13 @@
 // chart defaults for lesser code elsewere
 export const chartBase = (Chart) => {
     Chart.defaults.responsive = true
-    Chart.defaults.maintainAspectRatio = false
+    Chart.defaults.aspectRatio = 1
+    //Chart.defaults.maintainAspectRatio = false
+
     Chart.defaults.scale.grid.drawBorder = false
-    Chart.defaults.plugins.legend.align = 'start'
+    Chart.defaults.plugins.legend.align = 'center'
     Chart.defaults.plugins.legend.position = 'bottom'
+
 }
 export const colors = {
     backgroundColor: [
@@ -25,3 +28,4 @@ export const colors = {
     ],
     borderWidth: 1,
 };
+// Tips: https://www.chartjs.org/docs/latest/general/performance.html

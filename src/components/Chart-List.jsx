@@ -1,17 +1,22 @@
 import { useState } from 'react'
-// styles if needed
-import '../index.css'
-// Helpers for automatic colors and
-// possible working defaults
-import { colors } from './Helpers'
+//
+// data 
+import { UserData } from '../data'
+//
 // Charts
 import LineChart from './LineChart'
-import BarChart from './BarChar'
-// mock data 
-import { UserData } from '../data'
+import BarChart from './BarChart'
+import PieChart from './PieChart'
+//
+// styles if needed
+import '../index.css'
+//
+// Helpers for automatic colors and defaults
+import { chartBase, colors } from './Helpers'
+import { Chart, registerables } from 'chart.js'
+Chart.register(...registerables)
+chartBase(Chart)
 
-const chartWidth = '400'
-const chartHeight = '100'
 
 
 
@@ -42,12 +47,14 @@ const ChartList = () => {
       <div className="grid">
 
         <div>
-          <LineChart width={chartWidth} height={chartHeight} chartData={userData} />
+          <LineChart chartData={userData} />
         </div>
         <div>
-          <BarChart width={chartWidth} height={chartHeight} chartData={userData} />
+          <BarChart chartData={userData} />
         </div>
-
+        <div>
+          <PieChart chartData={userData} />
+        </div>
       </div>
     </div>
   )
