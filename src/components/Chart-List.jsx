@@ -17,9 +17,6 @@ import { Chart, registerables } from 'chart.js'
 Chart.register(...registerables)
 chartBase(Chart)
 
-
-
-
 UserData.map((data) => data.type)
 
 const ChartList = () => {
