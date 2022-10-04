@@ -14,3 +14,7 @@
 - Added react-router -things for practise and some icons and about page about.. well now plugins/ addons we have.
 - Added Octocat-corner to straight way to read this and everything else
 - Charts... started (again) after sending this. Refactored thinking and etc.
+
+### 4.10.22
+
+- Started to make differend Charts. Problem to solve: Data is in json, one json-block is one chart. And chart's have differend chart-bases like Bar and Line etc. I dont' want to make to every chart theirs own queryes. Maeby I have to until I have non-gummy solution.

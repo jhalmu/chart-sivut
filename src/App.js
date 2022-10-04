@@ -4,7 +4,7 @@ import {
 } from "react-router-dom";
 //import Footer from './components/layouts/Footer'
 import Header from './components/layouts/Header'
-import ChartList from './components/layouts/ChartList'
+import ChartList from './components//Chart-List'
 import About from './components/pages/About'
 import GithubCorner from "react-github-corner";
 
