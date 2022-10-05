@@ -1,12 +1,14 @@
 import {
-  Routes,
-  Route
+  Route, Routes
 } from "react-router-dom";
 //import Footer from './components/layouts/Footer'
-import Header from './components/layouts/Header'
-import ChartList from './components//Chart-List'
-import About from './components/pages/About'
 import GithubCorner from "react-github-corner";
+import ChartList from './components/chartjs/Chart-List';
+import Header from './components/layouts/Header';
+import About from './components/pages/About';
+import Home from './components/pages/Home';
+import NotFound from "./components/pages/NotFound";
+import RechartList from "./components/recharts/RechartList";
 
 const App = () => {
   const customHref = 'https://github.com/jhalmu/chart-sivut'
@@ -26,11 +28,14 @@ const App = () => {
             <Routes>
               <Route path='/' element={
                 <main>
-                  <ChartList />
+                  <Home />
                 </main>
               }>
               </Route>
+              <Route path='/rechart' element={<RechartList />} />
+              <Route path='/chartjs' element={<ChartList />} />
               <Route path='/about' element={<About />} />
+              <Route path='*' element={<NotFound />} />
             </Routes>
           </div>
         </div>

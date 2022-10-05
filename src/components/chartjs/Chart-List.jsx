@@ -1,7 +1,7 @@
 import { useState } from 'react'
 //
 // data 
-import { UserData } from '../data'
+import { UserData } from '../../data'
 //
 // Charts
 import LineChart from './LineChart'
@@ -9,7 +9,7 @@ import BarChart from './BarChart'
 import PieChart from './PieChart'
 //
 // styles if needed
-import '../index.css'
+import '../../index.css'
 //
 // Helpers for automatic colors and defaults
 import { chartBase, colors } from './Helpers'
@@ -17,11 +17,14 @@ import { Chart, registerables } from 'chart.js'
 Chart.register(...registerables)
 chartBase(Chart)
 
-UserData.map((data) => data.type)
+//UserData.map((data) => data.type)
 
 const ChartList = () => {
   const [userData] = useState({
 
+    //
+    // Otetaan ensimmäinen blokki datasta. Tarkoitus olisi saada jokaiseen charttiin oma data.
+    // Ei viisisi joka charttiin pistää hardcoded datan uppausta tai käy niin kuin VR:llä.
     labels: UserData[0].labels,
     datasets: [
       {

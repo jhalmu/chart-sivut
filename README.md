@@ -18,3 +18,7 @@
 ### 4.10.22
 
 - Started to make differend Charts. Problem to solve: Data is in json, one json-block is one chart. And chart's have differend chart-bases like Bar and Line etc. I dont' want to make to every chart theirs own queryes. Maeby I have to until I have non-gummy solution.
+
+### 6.10.22
+
+- React-Chart.js have made my beard gray. Found way to have default values, but reality is so, that this do not suit best for purpose I making it. So. I have to try recharts, because that have more logic and propably less-complex to build. I have only so much braincells and synapses between them to use. For this project data can be complicated and change on the fly.
