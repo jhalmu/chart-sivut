@@ -9,7 +9,7 @@ const About = () => {
 
       <p>
 
-        <code style={{ 'wordWrap': 'break-word', 'width': '25' + 'em' }}>
+        <code style={{ 'width': '25' + 'em' }}>
           "@testing-library/jest-dom": "^5.16.5",
           "@testing-library/react": "^13.4.0",
           "@testing-library/user-event": "^13.5.0",
@@ -27,7 +27,7 @@ const About = () => {
           "web-vitals": "^2.1.4"
         </code>
       </p>
-      Made by{' '}
+      Made by
       <a
         href="https://www.linkedin.com/in/juhahalmu/"
         target="_blank"
