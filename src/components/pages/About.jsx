@@ -9,7 +9,7 @@ const About = () => {
 
       <p>
 
-        <code style={{ 'width': '25' + 'em' }}>
+        <code style={{ 'width': '25em' }}>
           "@testing-library/jest-dom": "^5.16.5",
           "@testing-library/react": "^13.4.0",
           "@testing-library/user-event": "^13.5.0",
