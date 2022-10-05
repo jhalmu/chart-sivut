@@ -1,4 +1,4 @@
-# Investigations of ChartJS
+# Investigations of Charts
 
 ## JOURNAL
 
