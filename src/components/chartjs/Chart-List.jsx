@@ -40,8 +40,8 @@ const ChartList = () => {
   return (
     <div>
       <div className="headings">
-        <h2>Chart List</h2>
-        <h3>Place where charts say: We are alive!</h3>
+        <h2>ChartJS</h2>
+        <h3>ChartJS Gallery</h3>
       </div>
 
       <div className="grid">
