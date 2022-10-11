@@ -28,7 +28,7 @@ const BaseBarChart = () => {
                 <YAxis />
                 <Tooltip itemStyle={{ color: '#000' }} wrapperStyle={{ backgroundColor: 'rgba(0,255,255,0.6)' }} contentStyle={{ backgroundColor: 'rgba(106,121,247,0.5)' }} />
                 <Legend verticalAlign="top" height={36} iconType="wye" />
-                <Bar type="category" dataKey="data" type="monotone" label={{ fill: 'green', fontSize: 20 }} fill="#82ca9d" />
+                <Bar dataKey="data" label={{ fill: 'green', fontSize: 20 }} fill="#82ca9d" />
             </BarChart>
         </ResponsiveContainer>
     );
