@@ -1,0 +1,23 @@
+[
+    {
+        "labels": "Label A",
+        "data": 54,
+        "label": "James Dean elää ja voi hyvin"
+    },
+    {
+        "labels": "Label B",
+        "data": 102
+    },
+    {
+        "labels": "Label C",
+        "data": 219
+    },
+    {
+        "labels": "Label D",
+        "data": 126
+    },
+    {
+        "labels": "Label E",
+        "data": 254
+    }
+]

@@ -9,7 +9,9 @@ const Home = () => {
             <div className="headings">
                 <h2>Charts</h2>
                 <h3>Chart Main Gallery</h3>
+
             </div>
+            <hr />
             <div>
                 <RechartsList /><br />
                 <ChartList />

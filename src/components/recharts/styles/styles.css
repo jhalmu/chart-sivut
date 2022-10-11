@@ -1,0 +1,8 @@
+.chartStyles {
+    font-size: 0.6em;
+    color: #333
+}
+
+#grad {
+    background-image: linear-gradient(red, yellow);
+}

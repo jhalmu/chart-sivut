@@ -1,5 +1,7 @@
 import BaseBarChart from './Bars/BaseBarChart'
 import BaseLineChart from './Lines/BaseLineChart'
+import BasePieChart from './Pies/BasePieChart'
+import BaseAreaChart from './Areas/BaseAreaChart'
 
 const RechartList = () => {
     return (
@@ -12,6 +14,8 @@ const RechartList = () => {
             <div className="grid">
                 <BaseBarChart />
                 <BaseLineChart />
+                <BasePieChart />
+                <BaseAreaChart />
             </div>
         </div>
     )
