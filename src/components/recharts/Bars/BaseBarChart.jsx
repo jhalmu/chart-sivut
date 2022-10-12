@@ -4,7 +4,7 @@ import "../styles/styles.css";
 /// DATA
 import tuoteData from '../_data/BaseData';
 
-import { Bar, BarChart, CartesianGrid, Label, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Label, LabelList, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const BaseBarChart = () => {
 
@@ -22,14 +22,13 @@ const BaseBarChart = () => {
                 }}
             >
                 <CartesianGrid />
-                <XAxis dataKey="labels">
-                    <Label value={tuoteData.labels} offset={0} position="center" />
+                <XAxis dataKey="name">
+                    <Label value={tuoteData[0].ots} position="insideBottom" offset={-5} style={{ fontWeight: "bold" }} />
                 </XAxis>
                 <YAxis />
                 <Tooltip />
-                <Legend />
-                <Bar dataKey="tuotteet" label={{ fill: 'green', fontSize: 10 }} fill="#82ca9d" />
 
+                <Bar dataKey="tuotteet" label={{ fill: 'green', fontSize: 10 }} fill="#82ca9d" />
             </BarChart>
         </ResponsiveContainer>
     );

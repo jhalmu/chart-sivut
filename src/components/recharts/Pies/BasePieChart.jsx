@@ -3,7 +3,7 @@ import "../styles/styles.css";
 /// DATA
 import data from '../_data/BaseData.json';
 //import React, { useCallback, useState } from "react";
-import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip, Label } from "recharts";
 
 /* const data = [
     { name: "Group A", value: 400 },
@@ -61,6 +61,7 @@ const BasePieChart = () => {
                         <Cell key={`cell-${index}`} fill={COLORS[index]} />
                     ))}
                 </Pie>
+
                 <Tooltip />
             </PieChart>
         </ResponsiveContainer>

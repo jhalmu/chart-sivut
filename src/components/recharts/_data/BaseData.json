@@ -1,7 +1,8 @@
 [
     {
         "name": "Label A",
-        "tuotteet": 54
+        "tuotteet": 54,
+        "ots": "TUOTTEET"
     },
     {
         "name": "Label B",
