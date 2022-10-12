@@ -2,9 +2,9 @@
 import "../styles/styles.css";
 //
 /// DATA
-import data from '../_data/BaseBarData.json'
+import tuoteData from '../_data/BaseData';
 
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Label } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Label, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const BaseBarChart = () => {
 
@@ -13,7 +13,7 @@ const BaseBarChart = () => {
             <BarChart
                 width={500}
                 height={300}
-                data={data}
+                data={tuoteData}
                 margin={{
                     top: 5,
                     right: 30,
@@ -21,14 +21,15 @@ const BaseBarChart = () => {
                     bottom: 5,
                 }}
             >
-                <CartesianGrid strokeDasharray />
+                <CartesianGrid />
                 <XAxis dataKey="labels">
-                    <Label value={data[0].label} offset={0} position="insideBottom" />
+                    <Label value={tuoteData.labels} offset={0} position="center" />
                 </XAxis>
                 <YAxis />
-                <Tooltip itemStyle={{ color: '#000' }} wrapperStyle={{ backgroundColor: 'rgba(0,255,255,0.6)' }} contentStyle={{ backgroundColor: 'rgba(106,121,247,0.5)' }} />
-                <Legend verticalAlign="top" height={36} iconType="wye" />
-                <Bar dataKey="data" label={{ fill: 'green', fontSize: 20 }} fill="#82ca9d" />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="tuotteet" label={{ fill: 'green', fontSize: 10 }} fill="#82ca9d" />
+
             </BarChart>
         </ResponsiveContainer>
     );

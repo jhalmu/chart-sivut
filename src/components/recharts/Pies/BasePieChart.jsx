@@ -1,17 +1,20 @@
 import "../styles/styles.css";
-import React, { useCallback, useState } from "react";
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from "recharts";
+//
+/// DATA
+import data from '../_data/BaseData.json';
+//import React, { useCallback, useState } from "react";
+import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 
-const data = [
+/* const data = [
     { name: "Group A", value: 400 },
     { name: "Group B", value: 300 },
     { name: "Group C", value: 300 },
     { name: "Group D", value: 200 }
 ];
+ */
+const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#db03fc"];
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
-
-const RADIAN = Math.PI / 180;
+/* const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({
     cx,
     cy,
@@ -36,27 +39,29 @@ const renderCustomizedLabel = ({
             {`${(percent * 100).toFixed(0)}%`}
         </text>
     );
-};
+}; */
 const BasePieChart = () => {
 
     return (
         <ResponsiveContainer className="chartStyles" aspect={1}>
-            <PieChart width={400} height={400}>
+            <PieChart>
                 <Pie
                     data={data}
-                    cx="50%"
-                    cy="50%"
-                    labelLine={false}
-                    label={renderCustomizedLabel}
-                    outerRadius={80}
+                    outerRadius={60}
+                    innerRadius={30}
+                    //labelLine={false}
+                    label
+                    //label={renderCustomizedLabel}
+                    cx="50%" cy="50%"
                     fill="#8884d8"
-                    dataKey="value"
+                    dataKey="tuotteet"
+                    paddingAngle={2}
                 >
                     {data.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        <Cell key={`cell-${index}`} fill={COLORS[index]} />
                     ))}
                 </Pie>
-                <Legend />
+                <Tooltip />
             </PieChart>
         </ResponsiveContainer>
     );

@@ -1,16 +1,13 @@
 import "../styles/styles.css";
+//
+/// DATA
 import {
-    LineChart,
-    Line,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    Legend,
-    ResponsiveContainer
+    CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis,
+    YAxis
 } from "recharts";
+import tuoteData from '../_data/BaseData';
 
-const data = [
+/* const data = [
     {
         name: "Page A",
         uv: 4000,
@@ -53,7 +50,7 @@ const data = [
         pv: 4300,
         amt: 2100
     }
-];
+]; */
 
 const BaseLineChart = () => {
     return (
@@ -61,16 +58,16 @@ const BaseLineChart = () => {
             <LineChart
                 width={400}
                 height={200}
-                data={data}
+                data={tuoteData}
             >
                 <CartesianGrid />
-                <XAxis dataKey="name" />
+                <XAxis dataKey="tuotteet" />
                 <YAxis />
                 <Tooltip />
-                <Legend />
+                <Legend iconType="line" />
                 <Line
                     type="monotone"
-                    dataKey="pv"
+                    dataKey="tuotteet"
                     stroke="#8884d8"
                 />
             </LineChart>

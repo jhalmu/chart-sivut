@@ -11,7 +11,7 @@ const RechartList = () => {
                 <h3>Recharts Gallery</h3>
             </div>
 
-            <div className="grid">
+            <div className='grid'>
                 <BaseBarChart />
                 <BaseLineChart />
                 <BasePieChart />

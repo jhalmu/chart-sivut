@@ -1,17 +1,14 @@
 import "../styles/styles.css";
+//
+/// DATA
 import React from "react";
 import {
-    AreaChart,
-    Area,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    ResponsiveContainer,
-    Legend
+    Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis,
+    YAxis
 } from "recharts";
+import tuoteData from '../_data/BaseData';
 
-const data = [
+/* const data = [
     {
         name: "Page A",
         uv: 4000,
@@ -54,7 +51,7 @@ const data = [
         pv: 4300,
         amt: 2100
     }
-];
+]; */
 
 const BaseAreaChart = () => {
 
@@ -63,7 +60,7 @@ const BaseAreaChart = () => {
             <AreaChart
                 width={500}
                 height={400}
-                data={data}
+                data={tuoteData}
                 margin={{
                     top: 10,
                     right: 30,
@@ -71,11 +68,17 @@ const BaseAreaChart = () => {
                     bottom: 0
                 }}
             >
+                <defs>
+                    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
+                        <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+                    </linearGradient>
+                </defs>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
+                <XAxis dataKey="{tuoteData.labels}" />
                 <YAxis />
                 <Tooltip />
-                <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
+                <Area type="monotone" dataKey="tuotteet" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
                 <Legend />
             </AreaChart>
         </ResponsiveContainer>
