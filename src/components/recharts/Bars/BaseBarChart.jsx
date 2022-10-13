@@ -4,7 +4,7 @@ import "../styles/styles.css";
 /// DATA
 import tuoteData from '../../_data/BaseData';
 
-import { Bar, BarChart, CartesianGrid, Label, LabelList, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Label, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const BaseBarChart = () => {
 

@@ -2,7 +2,7 @@ import "../styles/styles.css";
 //
 /// DATA
 import {
-    CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, Label,
+    CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, Label,
     YAxis
 } from "recharts";
 import tuoteData from '../../_data/BaseData';
