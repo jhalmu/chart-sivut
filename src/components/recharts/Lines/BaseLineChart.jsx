@@ -5,14 +5,13 @@ import {
     CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, Label,
     YAxis
 } from "recharts";
-import tuoteData from '../_data/BaseData';
+import tuoteData from '../../_data/BaseData';
 
 const BaseLineChart = () => {
     return (
-        <ResponsiveContainer className="chartStyles" aspect={1}>
+        <ResponsiveContainer className="chartStyles" >
             <LineChart
-                width={400}
-                height={200}
+
                 data={tuoteData}
             >
                 <CartesianGrid />

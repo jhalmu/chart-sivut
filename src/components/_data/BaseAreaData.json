@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Label A",
+        "tuotteet": 54,
+        "ots": "TUOTTEET",
+        "backgroundColor": "rgba(153, 102,255, 0.5)",
+        "borderColor": "rgba(153, 102,255, 0.3)"
+    },
+    {
+        "name": "Label B",
+        "tuotteet": 102
+    },
+    {
+        "name": "Label C",
+        "tuotteet": 219
+    },
+    {
+        "name": "Label D",
+        "tuotteet": 126
+    },
+    {
+        "name": "Label E",
+        "tuotteet": 254
+    }
+]

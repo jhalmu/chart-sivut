@@ -3,25 +3,19 @@ import "../styles/styles.css";
 /// DATA
 import React from "react";
 import {
-    Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis,
+    Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis,
     YAxis, Label
 } from "recharts";
-import tuoteData from '../_data/BaseData';
+import tuoteData from '../../_data/BaseData';
 
 const BaseAreaChart = () => {
 
     return (
-        <ResponsiveContainer className="chartStyles" aspect={1}>
+        <ResponsiveContainer className="chartStyles">
             <AreaChart
-                width={500}
-                height={400}
+
                 data={tuoteData}
-                margin={{
-                    top: 10,
-                    right: 30,
-                    left: 0,
-                    bottom: 0
-                }}
+
             >
                 <defs>
                     <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -43,3 +37,6 @@ const BaseAreaChart = () => {
 }
 
 export default BaseAreaChart
+
+// bin
+// aspect={1}

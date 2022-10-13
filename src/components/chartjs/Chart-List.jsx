@@ -1,42 +1,14 @@
-import { useState } from 'react'
-//
-// data 
-import { UserData } from '../../data'
-//
 // Charts
-import LineChart from './LineChart'
-import BarChart from './BarChart'
-import PieChart from './PieChart'
+import BaseLineChart from './Lines/BaseLineChart'
+import BaseBarChart from './Bars/BaseBarChart'
+import BasePieChart from './Pies/BasePieChart'
+import BaseAreaChart from './Areas/BaseAreaChart'
 //
 // styles if needed
 import '../../index.css'
-//
-// Helpers for automatic colors and defaults
-import { chartBase, colors } from './Helpers'
-import { Chart, registerables } from 'chart.js'
-Chart.register(...registerables)
-chartBase(Chart)
-
-//UserData.map((data) => data.type)
 
 const ChartList = () => {
-  const [userData] = useState({
 
-    //
-    // Otetaan ensimmäinen blokki datasta. Tarkoitus olisi saada jokaiseen charttiin oma data.
-    // Ei viisisi joka charttiin pistää hardcoded datan uppausta tai käy niin kuin VR:llä.
-    labels: UserData[0].labels,
-    datasets: [
-      {
-        label: [UserData[0].label],
-        data: UserData[0].data,
-        backgroundColor: colors.backgroundColor,
-        borderColor: colors.borderColor,
-
-      },
-    ],
-
-  })
   return (
     <div>
       <div className="headings">
@@ -47,13 +19,20 @@ const ChartList = () => {
       <div className="grid">
 
         <div>
-          <LineChart chartData={userData} />
+          <label>Bar</label>
+          <BaseBarChart />
         </div>
         <div>
-          <BarChart chartData={userData} />
+          <label>Line</label>
+          <BaseLineChart />
         </div>
         <div>
-          <PieChart chartData={userData} />
+          <label>DietPie</label>
+          <BasePieChart />
+        </div>
+        <div>
+          <label>Area</label>
+          <BaseAreaChart />
         </div>
       </div>
     </div>

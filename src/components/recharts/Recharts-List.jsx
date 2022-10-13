@@ -12,10 +12,18 @@ const RechartList = () => {
             </div>
 
             <div className='grid'>
-                <BaseBarChart />
-                <BaseLineChart />
-                <BasePieChart />
-                <BaseAreaChart />
+                <div>
+                    <BaseBarChart />
+                </div>
+                <div>
+                    <BaseLineChart />
+                </div>
+                <div>
+                    <BasePieChart />
+                </div>
+                <div>
+                    <BaseAreaChart />
+                </div>
             </div>
         </div>
     )

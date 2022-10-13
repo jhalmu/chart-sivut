@@ -2,24 +2,18 @@
 import "../styles/styles.css";
 //
 /// DATA
-import tuoteData from '../_data/BaseData';
+import tuoteData from '../../_data/BaseData';
 
 import { Bar, BarChart, CartesianGrid, Label, LabelList, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const BaseBarChart = () => {
 
     return (
-        <ResponsiveContainer className="chartStyles" aspect={1}>
+        <ResponsiveContainer className="chartStyles">
             <BarChart
-                width={500}
-                height={300}
+
                 data={tuoteData}
-                margin={{
-                    top: 5,
-                    right: 30,
-                    left: 20,
-                    bottom: 5,
-                }}
+
             >
                 <CartesianGrid />
                 <XAxis dataKey="name">

@@ -1,9 +1,9 @@
 import 'chart.js/auto'
 import { Bar } from 'react-chartjs-2'
-import '../../index.css'
+import '../styles/styles.css'
 
-function BarChart({ chartData, chartOptions }) {
+function BaseBarChart({ chartData, chartOptions }) {
   return <Bar data={chartData} options={chartOptions} />
 }
 
-export default BarChart
+export default BaseBarChart

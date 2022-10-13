@@ -1,7 +1,7 @@
 import "../styles/styles.css";
 //
 /// DATA
-import data from '../_data/BaseData.json';
+import data from '../../_data/BaseData.json';
 //import React, { useCallback, useState } from "react";
 import { Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip, Label } from "recharts";
 
