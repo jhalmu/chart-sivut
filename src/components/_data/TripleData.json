@@ -9,7 +9,8 @@
         "backgroundColor2": "rgba(153, 102,255, 0.5)",
         "borderColor2": "rgba(153, 102,255, 0.3)",
         "ots1": "TUOTTEET",
-        "ots2": "PIDÄKKEET"
+        "ots2": "PIDÄKKEET",
+        "ots3": "JAKOAVAIMET"
     },
     {
         "name1": "Label C",

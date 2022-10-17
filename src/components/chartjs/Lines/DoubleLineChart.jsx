@@ -7,9 +7,8 @@ import '../../../styles/styles.css'
 
 
 // Helpers for automatic colors and defaults
-import { Chart, registerables } from 'chart.js'
+import { Chart } from 'chart.js'
 import { chartBase } from '../Helpers'
-Chart.register(...registerables)
 chartBase(Chart)
 
 export const options = {

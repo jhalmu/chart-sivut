@@ -7,10 +7,10 @@ import UserData from '../../_data/BaseLineData'
 import '../../../styles/styles.css'
 
 // Helpers for automatic colors and defaults
-import { chartBase } from '../Helpers'
+/* import { chartBase } from '../Helpers'
 import { Chart, registerables } from 'chart.js'
 Chart.register(...registerables)
-chartBase(Chart)
+chartBase(Chart) */
 
 
 const BaseLineChart = () => {

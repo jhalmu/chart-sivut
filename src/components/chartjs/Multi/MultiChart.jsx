@@ -1,33 +1,10 @@
 //
 // data 
-import UserData from '../../_data/DoubleAreaData'
+import UserData from '../../_data/TripleData'
 import '../../../styles/styles.css'
-//import 'chart.js/auto'
-import {
-  Chart as ChartJS,
-  LinearScale,
-  CategoryScale,
-  BarElement,
-  PointElement,
-  LineElement,
-  Legend,
-  Tooltip,
-  LineController,
-  BarController,
-} from 'chart.js';
+import 'chart.js/auto'
 import { Chart } from 'react-chartjs-2';
 
-ChartJS.register(
-  LinearScale,
-  CategoryScale,
-  BarElement,
-  PointElement,
-  LineElement,
-  Legend,
-  Tooltip,
-  LineController,
-  BarController
-);
 // Helpers for automatic colors and defaults
 //import { chartBase } from '../Helpers'
 //import { Chart, registerables } from 'chart.js'
@@ -55,7 +32,7 @@ export const data = {
   datasets: [
     {
       type: 'line',
-      label: UserData.map((data) => data.ots1),
+      label: UserData[0].ots2,
       borderColor: UserData[0].backgroundColor1,
       borderWidth: 2,
       fill: true,
@@ -63,18 +40,19 @@ export const data = {
     },
     {
       type: 'bar',
-      label: UserData.map((data) => data.ots2),
+      label: UserData[0].ots3,
       backgroundColor: UserData[0].backgroundColor2,
       data: UserData.map((data) => data.tuotteet2),
     },
     {
       type: 'bar',
-      label: UserData.map((data) => data.ots1),
+      label: UserData[0].ots1,
       backgroundColor: UserData[0].backgroundColor1,
       data: UserData.map((data) => data.tuotteet1),
     },
   ],
 };
+//console.log(UserData[0].ots2)
 export default function MultiChart() {
   return <Chart type='bar' data={data} />
 }

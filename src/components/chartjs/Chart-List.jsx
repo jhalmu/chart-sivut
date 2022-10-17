@@ -7,6 +7,7 @@ import DoubleLineChart from './Lines/DoubleLineChart'
 import BasePieChart from './Pies/BasePieChart'
 import DoubleBarChart from './Bars/DoubleBarChart'
 import MultiChart from './Multi/MultiChart'
+import { HorisontalBarChart } from './Bars/HorisontalBarChart'
 //
 // styles if needed
 import '../../styles/styles.css'
@@ -48,8 +49,12 @@ const ChartList = () => {
           <label>Multi Chart</label>
           <MultiChart />
         </div>
+        <div>
+          <label>Horizontal Bar</label>
+          <HorisontalBarChart />
+        </div>
       </div>
-    </div >
+    </div>
   )
 }
 
