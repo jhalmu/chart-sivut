@@ -1,23 +1,21 @@
 // Charts
-import BaseLineChart from './Lines/BaseLineChart'
-import BaseBarChart from './Bars/BaseBarChart'
-import BasePieChart from './Pies/BasePieChart'
 import BaseAreaChart from './Areas/BaseAreaChart'
+import DoubleAreaChart from './Areas/DoubleAreaChart'
+import BaseBarChart from './Bars/BaseBarChart'
+import BaseLineChart from './Lines/BaseLineChart'
+import DoubleLineChart from './Lines/DoubleLineChart'
+import BasePieChart from './Pies/BasePieChart'
+import DoubleBarChart from './Bars/DoubleBarChart'
+import MultiChart from './Multi/MultiChart'
 //
 // styles if needed
-import '../../index.css'
+import '../../styles/styles.css'
 
 const ChartList = () => {
 
   return (
     <div>
-      <div className="headings">
-        <h2>ChartJS</h2>
-        <h3>ChartJS Gallery</h3>
-      </div>
-
       <div className="grid">
-
         <div>
           <label>Bar</label>
           <BaseBarChart />
@@ -34,8 +32,24 @@ const ChartList = () => {
           <label>Area</label>
           <BaseAreaChart />
         </div>
+        <div>
+          <label>Double Area</label>
+          <DoubleAreaChart />
+        </div>
+        <div>
+          <label>Double Line</label>
+          <DoubleLineChart />
+        </div>
+        <div>
+          <label>Double Bar</label>
+          <DoubleBarChart />
+        </div>
+        <div>
+          <label>Multi Chart</label>
+          <MultiChart />
+        </div>
       </div>
-    </div>
+    </div >
   )
 }
 

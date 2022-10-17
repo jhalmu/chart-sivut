@@ -4,7 +4,7 @@ import { useState } from 'react'
 //
 // data 
 import UserData from '../../_data/BaseLineData'
-import '../styles/styles.css'
+import '../../../styles/styles.css'
 
 // Helpers for automatic colors and defaults
 import { chartBase } from '../Helpers'

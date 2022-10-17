@@ -4,10 +4,14 @@ const About = () => {
     <div>
       <div className="headings">
         <h2>About</h2>
-        <h3>What we have been eaten so far</h3>
+        <h3>Sivun tarkoitus</h3>
       </div>
+      <p>Sivun tarkoitus on esitellä ChartJS:n moduuleita mitä on valmiina datan kanssa.</p>
+      <p>Tarkoituksena olisi, että oikeanlaisen datan tullessa json-muodossa, se löytäisi oikean
+        graafin ja näyttäytyisi halutusti.
+      </p>
 
-      <p>
+      <p style={{ 'display': 'none' }}>
 
         <code style={{ 'width': '25em' }}>
           "@testing-library/jest-dom": "^5.16.5",
@@ -27,7 +31,7 @@ const About = () => {
           "web-vitals": "^2.1.4"
         </code>
       </p>
-      Made by
+      Authorized by <br />
       <a
         href="https://www.linkedin.com/in/juhahalmu/"
         target="_blank"

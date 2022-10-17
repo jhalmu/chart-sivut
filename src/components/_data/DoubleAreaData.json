@@ -1,0 +1,38 @@
+[
+    {
+        "name1": "Label A",
+        "tuotteet1": 54,
+        "ots1": "TUOTTEET",
+        "backgroundColor1": "rgba(75, 192, 192, 0.5)",
+        "borderColor1": "rgba(75, 192, 192, 0.3)",
+        "name2": "Label B",
+        "tuotteet2": 302,
+        "ots2": "PIDÄKKEET",
+        "backgroundColor2": "rgba(153, 102,255, 0.5)",
+        "borderColor2": "rgba(153, 102,255, 0.3)"
+    },
+    {
+        "name1": "Label C",
+        "tuotteet1": 219,
+        "name2": "Label W",
+        "tuotteet2": 35
+    },
+    {
+        "name1": "Label D",
+        "tuotteet1": 96,
+        "name2": "Label Q",
+        "tuotteet2": 172
+    },
+    {
+        "name1": "Label E",
+        "tuotteet1": 254,
+        "name2": "Label R",
+        "tuotteet2": 25
+    },
+    {
+        "name1": "Label F",
+        "tuotteet1": 99,
+        "name2": "Label P",
+        "tuotteet2": 300
+    }
+]

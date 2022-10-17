@@ -28,7 +28,7 @@ const Header = () => {
               <FaChartBar /> ChartJS
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/rechart"
               className="secondary"
@@ -36,7 +36,7 @@ const Header = () => {
             >
               <FaChartBar /> Rechart
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               to="/about"

@@ -1,4 +1,4 @@
-# Investigations of Charts
+# Investigation of Charts
 
 ## JOURNAL
 
@@ -28,7 +28,7 @@
 - Reactchart do not make chart-image by nature, so that is not good. And it's not responsive.
 - Made ChartJS to fetch data from chartfile. They use theyr own datasource so pie and areachart can work
 - Areachart is same than linechart with one fill=true diffrence, which I don't like, 'cos that no consistent. Well. Pie is same than Doghnut but hey are differend modules. Huraa.
-- Rechart uses same datasource. 
+- Rechart uses same datasource.
 - In ChartJS data is now colors as "props" and label too id needed. Have to thing how to put numbers in pie?
-- I personally might use rechart anyway in own project, 'cos I think that I can make them look better. Rechart is more suitable with lesser and bigger charts, I think. But was there gradients in chartjs? 
+- I personally might use rechart anyway in own project, 'cos I think that I can make them look better. Rechart is more suitable with lesser and bigger charts, I think. But was there gradients in chartjs?
 - Al so refactored that chart types are in their own folders. I might put all so datas there, because more complex charts have own more complex datastructures and I think that it is more easyer to made them to separate json-files.
