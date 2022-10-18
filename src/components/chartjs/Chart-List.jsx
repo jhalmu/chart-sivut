@@ -26,7 +26,7 @@ const ChartList = () => {
           <BaseLineChart />
         </div>
         <div>
-          <label>DietPie</label>
+          <label>Pie</label>
           <BasePieChart />
         </div>
         <div>
