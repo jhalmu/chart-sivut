@@ -35,11 +35,3 @@ const BaseAreaChart = () => {
 
 }
 export default BaseAreaChart
-
-
-
-
-
-
-// bin
-// function BaseAreaChart({ chartData, chartOptions }) {

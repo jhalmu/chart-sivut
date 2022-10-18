@@ -1,5 +1,5 @@
 import 'chart.js/auto'
-import { Doughnut } from 'react-chartjs-2'
+import { Pie } from 'react-chartjs-2'
 import { useState } from 'react'
 //
 // data 
@@ -28,16 +28,8 @@ const BasePieChart = () => {
 
   })
   return (
-    <Doughnut data={userData} />
+    <Pie data={userData} />
   )
 
 }
 export default BasePieChart
-
-
-
-
-
-
-// bin
-// function BaseAreaChart({ chartData, chartOptions }) {

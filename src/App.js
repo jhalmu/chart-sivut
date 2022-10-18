@@ -8,8 +8,6 @@ import Header from './components/layouts/Header';
 import About from './components/pages/About';
 import Home from './components/pages/Home';
 import NotFound from "./components/pages/NotFound";
-//import RechartsList from "./components/recharts/Recharts-List";
-
 const App = () => {
   const customHref = 'https://github.com/jhalmu/chart-sivut'
   return (
@@ -32,7 +30,6 @@ const App = () => {
                 </main>
               }>
               </Route>
-              {/* <Route path='/rechart' element={<RechartsList />} /> */}
               <Route path='/chartjs' element={<ChartList />} />
               <Route path='/about' element={<About />} />
               <Route path='*' element={<NotFound />} />
