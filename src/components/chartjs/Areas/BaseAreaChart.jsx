@@ -5,9 +5,6 @@ import { Line } from 'react-chartjs-2'
 import UserData from '../../_data/BaseAreaData'
 import '../../../styles/styles.css'
 
-// Helpers for automatic colors and defaults
-/* import { chartBase } from '../Helpers'*/
-
 export const options = {
   responsive: true,
   interaction: {
@@ -16,6 +13,7 @@ export const options = {
   },
   stacked: false,
   plugins: {
+    datalabels: false,
     title: {
       display: false,
       text: 'Area Chart w/ Title',

@@ -14,6 +14,7 @@ export const options = {
   },
   stacked: false,
   plugins: {
+    datalabels: true,
     title: {
       display: false,
       text: 'Multi Area Chart w/ Title',
@@ -65,6 +66,6 @@ export const data = {
 
 export default function DoubleAreaChart() {
   return (
-    <Line data={data} />
+    <Line options={options} data={data} />
   )
 }

@@ -15,10 +15,11 @@ export const options = {
   responsive: true,
   interaction: {
     mode: 'index',
-    intersect: false,
+    intersect: true,
   },
   stacked: false,
   plugins: {
+    datalabels: false,
     title: {
       display: false,
       text: 'Multi Area Chart w/ Title',
