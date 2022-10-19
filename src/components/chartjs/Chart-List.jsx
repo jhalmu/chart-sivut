@@ -1,7 +1,3 @@
-//
-// Datalabels for extending label info: formatter: percent etc.
-//import ChartDataLabels from 'chartjs-plugin-datalabels';
-//Chart.register(ChartDataLabels);
 // Charts
 import BaseAreaChart from './Areas/BaseAreaChart'
 import DoubleAreaChart from './Areas/DoubleAreaChart'

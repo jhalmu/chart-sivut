@@ -1,13 +1,19 @@
 import 'chart.js/auto'
 import { Bar } from 'react-chartjs-2'
 import { useState } from 'react'
+/* import { Chart } from 'chart.js'; */
 //
 // data 
 import UserData from '../../_data/BaseBarData'
 import '../../../styles/styles.css'
+/* import ChartDataLabels from 'chartjs-plugin-datalabels';
+Chart.register(ChartDataLabels);
 
-// Helpers for automatic colors and defaults
-/* import { chartBase } from '../Helpers'*/
+var options = {
+  plugins: [ChartDataLabels],
+}; */
+
+
 
 const BaseBarChart = () => {
   const [userData] = useState({
@@ -19,7 +25,7 @@ const BaseBarChart = () => {
       backgroundColor: UserData[0].backgroundColor,
       borderColor: UserData[0].borderColor,
 
-      tooltip: {
+      /* tooltip: {
         callbacks: {
           label: function (context) {
             let label = context.label;
@@ -38,7 +44,7 @@ const BaseBarChart = () => {
             return label + ": " + percentage;
           }
         }
-      }
+      } */
     }]
   })
   return (
@@ -47,11 +53,3 @@ const BaseBarChart = () => {
   )
 }
 export default BaseBarChart
-
-
-
-
-
-
-// bin
-// function BaseAreaChart({ chartData, chartOptions }) {

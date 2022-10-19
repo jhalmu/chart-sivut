@@ -5,13 +5,12 @@ import { useState } from 'react'
 // data 
 import UserData from '../../_data/BasePieData'
 import '../../../styles/styles.css'
-
-// Helpers for automatic colors and defaults
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { chartBase, colors } from '../Helpers'
 import { Chart, registerables } from 'chart.js'
+Chart.register(ChartDataLabels);
 Chart.register(...registerables)
 chartBase(Chart)
-
 
 const BasePieChart = () => {
   const [userData] = useState({
@@ -23,6 +22,7 @@ const BasePieChart = () => {
         data: UserData.map((data) => data.tuotteet),
         backgroundColor: colors.backgroundColor,
         borderColor: colors.borderColor,
+        plugins: [ChartDataLabels],
         tooltip: {
           callbacks: {
             label: function (context) {

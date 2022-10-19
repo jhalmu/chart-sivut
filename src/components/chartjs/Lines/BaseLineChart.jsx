@@ -6,12 +6,6 @@ import { useState } from 'react'
 import UserData from '../../_data/BaseLineData'
 import '../../../styles/styles.css'
 
-// Helpers for automatic colors and defaults
-/* import { chartBase } from '../Helpers'
-import { Chart, registerables } from 'chart.js'
-Chart.register(...registerables)
-chartBase(Chart) */
-
 
 const BaseLineChart = () => {
   const [userData] = useState({

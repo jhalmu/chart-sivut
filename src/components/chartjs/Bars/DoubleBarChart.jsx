@@ -5,12 +5,6 @@ import { Bar } from 'react-chartjs-2'
 import UserData from '../../_data/DoubleAreaData'
 import '../../../styles/styles.css'
 
-// Helpers for automatic colors and defaults
-/* import { chartBase } from '../Helpers'
-import { Chart, registerables } from 'chart.js'
-Chart.register(...registerables)
-chartBase(Chart) */
-
 export const options = {
   responsive: true,
   plugins: {

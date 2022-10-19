@@ -5,12 +5,6 @@ import '../../../styles/styles.css'
 import 'chart.js/auto'
 import { Chart } from 'react-chartjs-2';
 
-// Helpers for automatic colors and defaults
-//import { chartBase } from '../Helpers'
-//import { Chart, registerables } from 'chart.js'
-//Chart.register(...registerables)
-//chartBase(Chart)
-
 export const options = {
   responsive: true,
   plugins: {
