@@ -35,6 +35,6 @@ const data = {
 
   }]
 }
-export function HorisontalBarChart() {
+export default function HorisontalBarChart() {
   return <Bar options={options} data={data} />;
 }

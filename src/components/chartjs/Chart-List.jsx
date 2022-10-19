@@ -1,3 +1,7 @@
+//
+// Datalabels for extending label info: formatter: percent etc.
+//import ChartDataLabels from 'chartjs-plugin-datalabels';
+//Chart.register(ChartDataLabels);
 // Charts
 import BaseAreaChart from './Areas/BaseAreaChart'
 import DoubleAreaChart from './Areas/DoubleAreaChart'
@@ -7,7 +11,8 @@ import DoubleLineChart from './Lines/DoubleLineChart'
 import BasePieChart from './Pies/BasePieChart'
 import DoubleBarChart from './Bars/DoubleBarChart'
 import MultiChart from './Multi/MultiChart'
-import { HorisontalBarChart } from './Bars/HorisontalBarChart'
+import HorisontalBarChart from './Bars/HorisontalBarChart'
+import StackedBarChart from './Bars/StackedBarChart'
 //
 // styles if needed
 import '../../styles/styles.css'
@@ -52,6 +57,10 @@ const ChartList = () => {
         <div>
           <label>Horizontal Bar</label>
           <HorisontalBarChart />
+        </div>
+        <div>
+          <label>Stacked Bar</label>
+          <StackedBarChart />
         </div>
       </div>
     </div>

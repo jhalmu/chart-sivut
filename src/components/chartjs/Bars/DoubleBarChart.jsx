@@ -21,7 +21,7 @@ export const options = {
       display: false,
       text: 'Chart.js Bar Chart',
     },
-  },
+  }
 };
 
 
@@ -33,12 +33,12 @@ export const data = {
     {
       label: UserData[0].ots1,
       data: UserData.map((data) => data.tuotteet1),
-      backgroundColor: UserData[0].backgroundColor1
+      backgroundColor: UserData[0].backgroundColor1,
     },
     {
       label: UserData[0].ots2,
       data: UserData.map((data) => data.tuotteet2),
-      backgroundColor: UserData[0].backgroundColor2
+      backgroundColor: UserData[0].backgroundColor2,
     },
   ],
 };

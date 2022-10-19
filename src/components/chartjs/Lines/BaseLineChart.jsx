@@ -24,7 +24,8 @@ const BaseLineChart = () => {
         backgroundColor: UserData[0].backgroundColor,
         borderColor: UserData[0].borderColor,
         // This makes line to area-chart
-        fill: false
+        fill: false,
+        lineTension: 0.2,
       },
     ],
 

@@ -1,39 +1,51 @@
 [
     {
-        "name1": "Label A",
-        "tuotteet1": 54,
         "backgroundColor1": "rgba(75, 192, 192, 0.5)",
-        "borderColor1": "rgba(75, 192, 192, 0.3)",
-        "name2": "Label B",
-        "tuotteet2": 302,
         "backgroundColor2": "rgba(153, 102,255, 0.5)",
+        "backgroundColor3": "rgba(255, 99, 132, 0.5)",
+        "borderColor1": "rgba(75, 192, 192, 0.3)",
         "borderColor2": "rgba(153, 102,255, 0.3)",
+        "borderColor3": "rgba(255, 99, 132, 0.3)",
         "ots1": "TUOTTEET",
         "ots2": "PIDÄKKEET",
-        "ots3": "JAKOAVAIMET"
+        "ots3": "KORNETIT",
+        "name1": "Label A",
+        "tuotteet1": 54,
+        "name2": "Label B",
+        "tuotteet2": 302,
+        "name3": "Label O",
+        "tuotteet3": 88
     },
     {
         "name1": "Label C",
         "tuotteet1": 219,
         "name2": "Label W",
-        "tuotteet2": 35
+        "tuotteet2": 35,
+        "name3": "Label F",
+        "tuotteet3": 720
     },
     {
         "name1": "Label D",
         "tuotteet1": 96,
         "name2": "Label Q",
-        "tuotteet2": 172
+        "tuotteet2": 172,
+        "name3": "Label V",
+        "tuotteet3": 48
     },
     {
         "name1": "Label E",
         "tuotteet1": 254,
         "name2": "Label R",
-        "tuotteet2": 25
+        "tuotteet2": 25,
+        "name3": "Label K",
+        "tuotteet3": 134
     },
     {
         "name1": "Label F",
         "tuotteet1": 99,
         "name2": "Label P",
-        "tuotteet2": 300
+        "tuotteet2": 300,
+        "name3": "Label S",
+        "tuotteet3": 120
     }
 ]

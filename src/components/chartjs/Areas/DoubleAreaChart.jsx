@@ -54,6 +54,26 @@ export const data = {
       // This makes line to area-chart
       fill: true,
       yAxisID: 'y',
+      tooltip: {
+        callbacks: {
+          label: function (context) {
+            let label = context.label;
+            let value = context.formattedValue;
+
+            if (!label)
+              label = 'Unknown'
+
+            let sum = 0;
+            let dataArr = context.chart.data.datasets[0].data;
+            dataArr.map(data => {
+              return sum += Number(data);
+            });
+
+            let percentage = (value * 100 / sum).toFixed(2) + '%';
+            return label + ": " + percentage;
+          }
+        }
+      }
     },
     {
       label: UserData[0].ots2,
@@ -63,6 +83,26 @@ export const data = {
       // This makes line to area-chart
       fill: true,
       yAxisID: 'y1',
+      tooltip: {
+        callbacks: {
+          label: function (context) {
+            let label = context.label;
+            let value = context.formattedValue;
+
+            if (!label)
+              label = 'Unknown'
+
+            let sum = 0;
+            let dataArr = context.chart.data.datasets[0].data;
+            dataArr.map(data => {
+              return sum += Number(data);
+            });
+
+            let percentage = (value * 100 / sum).toFixed(2) + '%';
+            return label + ": " + percentage;
+          }
+        }
+      }
     }
   ],
 

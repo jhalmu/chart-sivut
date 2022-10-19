@@ -2,11 +2,17 @@
 export const chartBase = (Chart) => {
     Chart.defaults.responsive = true
     Chart.defaults.aspectRatio = 1
-    //Chart.defaults.maintainAspectRatio = false
-
+    Chart.defaults.maintainAspectRatio = true
     Chart.defaults.scale.grid.drawBorder = false
     Chart.defaults.plugins.legend.align = 'center'
     Chart.defaults.plugins.legend.position = 'bottom'
+    //Chart.defaults.font.family = 'Nunito';
+    Chart.defaults.locale = 'fi-FI'
+    Chart.defaults.elements.line.borderJoinStyle = 'round';
+    //Chart.register(ChartDataLabels);
+    //Chart.defaults.plugins.datalabels.align = 'end';
+    //Chart.defaults.plugins.datalabels.anchor = 'end';
+    //Chart.defaults.plugins.datalabels.clamp = true;
 
 }
 export const colors = {

@@ -1,37 +1,68 @@
 import 'chart.js/auto'
 import { Line } from 'react-chartjs-2'
-import { useState } from 'react'
 //
 // data 
 import UserData from '../../_data/BaseAreaData'
 import '../../../styles/styles.css'
 
 // Helpers for automatic colors and defaults
-/* import { chartBase } from '../Helpers'
-import { Chart, registerables } from 'chart.js'
-Chart.register(...registerables)
-chartBase(Chart) */
+/* import { chartBase } from '../Helpers'*/
 
+export const options = {
+  responsive: true,
+  interaction: {
+    mode: 'index',
+    intersect: false,
+  },
+  stacked: false,
+  plugins: {
+    title: {
+      display: false,
+      text: 'Area Chart w/ Title',
+    },
+  }
+};
 
-const BaseAreaChart = () => {
-  const [userData] = useState({
+const labels = UserData.map((data) => data.name)
 
-    labels: UserData.map((data) => data.name),
-    datasets: [
-      {
-        label: UserData[0].ots,
-        data: UserData.map((data) => data.tuotteet),
-        backgroundColor: UserData[0].backgroundColor,
-        borderColor: UserData[0].borderColor,
-        // This makes line to area-chart
-        fill: true
+export const data = {
+  labels,
+  datasets: [
+    {
+      label: UserData[0].ots,
+      data: UserData.map((data) => data.tuotteet),
+      backgroundColor: UserData[0].backgroundColor,
+      borderColor: UserData[0].borderColor,
+      // This makes line to area-chart
+      fill: true,
+
+      tooltip: {
+        callbacks: {
+          label: function (context) {
+            let label = context.label;
+            let value = context.formattedValue;
+
+            if (!label)
+              label = 'Unknown'
+
+            let sum = 0;
+            let dataArr = context.chart.data.datasets[0].data;
+
+            dataArr.map(data => {
+              return sum += Number(data);
+            });
+            let percentage = (value * 100 / sum).toFixed(2) + '%';
+            return label + ": " + percentage;
+          }
+        }
       },
-    ],
+    },
 
-  })
-  return (
-    <Line data={userData} />
-  )
-
+  ],
 }
-export default BaseAreaChart
+
+export default function BaseAreaChart() {
+  return (
+    <Line options={options} data={data} />
+  )
+}

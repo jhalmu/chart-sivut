@@ -54,6 +54,7 @@ export const data = {
       // This makes line to area-chart
       fill: false,
       yAxisID: 'y',
+      lineTension: 0,
     },
     {
       label: UserData[0].ots2,
