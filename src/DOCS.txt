@@ -1,0 +1,40 @@
+CHARTJS SIVUSTO - OHJEISTUS v. 211022
+
+Sivuston tarkoitus on visualisoida ja tuottaa tilaajalle erilaisia graafeja käyttäen
+pääkirjastoina ReactJs kirjastoa sekä ChartJs kirjastoa.Reactissa pyritään käyttämään uusinta
+mahdollista versiota kuitenkin niin, että paketeissa saataisiin mahdollisimman hyvä tietoturvan taso. 
+
+Graafit ovat omina react - komponentteinaan, että niitä on helpompi käyttää uudestaan ja sijoitella 
+sivustolla haluttuun / haluttuihin kohtiin.Sivuston rakenne on rakennettu seuraavaksi
+
+    - public - kansion sisällä on esimeriksi favicon ja logo - kuvat sekä muut applikaatioon mahdollisesti liittyvät
+tiedostot.
+- src - kansion sisällä on kaikki koodit
+    - - components - kansion sisällä on react - komponentit niille nimetyissä kansioissaan. 
+- - - chartjs - kansiossa on kaikki chart komponentit
+    - - - layout - kansiossa applikaation ulkoasuun liittyvät tiedostot. 
+ja niin edelleen.
+
+Tämässä applikaatiossa on käytetty myös react - routeria joka ei sinänsä liity itse applikaation
+toiminnallisuuteen.Tarvittaessa applikaation sisäistä rakennetta voi vielä yksinkertaistaa poistamalla
+ulkoasuun liittyviä komponentteja.  
+
+Graafien teossa käytetään hyväksi reactille tehtyä valmista pakettia chartjs: stä. 
+
+Graafit on jaettu kansioihin joiden sisällä on erikseen teemaan kuuluvat graafit yksinkertaisimmasta
+tarvittavan monimutkaisempiin.
+
+Graafien tietovarastona käytetään erillisiä JSON - tiedostoja.JSON tiedostot ovat rakennettu niin
+että ensimmäisessä lohkossa on tarvittavat otsikot ja värimäärittelyt ja muuu erillinen ulkopuolelta
+tuleva konffaus.Ensimmäisessä lohkossa on myös ensimmäinen graafien tieto joka näytetään, koska 
+muuten ensimmäinen esimeriksi bar - tolppa olisi tyhjä.Toki sen saisi teknisesti toteutumaan myös niin
+että konfiguraatiot olisivat erikseen, mutta tällä hetkellä tämä on yksinkertaisin ratkaisu.
+
+Graafien näkyvissä numeroissa käytetään erillisitä datalables - kirjastoa.Erikoisuutena tässä on,
+    että jos sivulla on useamppia chartjs graafeja, laittaa se numerot globaalisti kaikkiin graafeihin.
+Jos johonkin graafiin ei haluta numeroa, pitää se erikseen estää sisäisessä options - kohdassa.
+
+Graafien hiireällä näykyvissä prosenttiluvuissa on käytetty erillista koodinpätkää joka sen tekee.
+
+Tämän chartjs applikaation tekemisestä on myös olemassa journal - tyyppinen kehityspäiväkirja joka on
+luettavissa README.md tiedostossa ja näkyy myös githubissa aloitussivulla.

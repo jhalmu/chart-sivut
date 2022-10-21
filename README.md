@@ -32,3 +32,9 @@
 - In ChartJS data is now colors as "props" and label too id needed. Have to thing how to put numbers in pie?
 - I personally might use rechart anyway in own project, 'cos I think that I can make them look better. Rechart is more suitable with lesser and bigger charts, I think. But was there gradients in chartjs?
 - Al so refactored that chart types are in their own folders. I might put all so datas there, because more complex charts have own more complex datastructures and I think that it is more easyer to made them to separate json-files.
+
+### 21.10.22
+
+- Added more charts and new plugin datalabels. I'm focusing now only ChartJS. Noticed that datalabels put numbers for all charts in "same page". If you do not want numbers, you have to disable it from chart options. Tehe is al so code which changes numbers in labels to percents.
+- Added Manual to show in About -page.
+  
