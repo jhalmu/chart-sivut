@@ -35,7 +35,7 @@ export const data = {
               return sum += Number(data);
             });
 
-            let percentage = (value * 100 / sum).toFixed(2) + '%';
+            let percentage = (value * 100 / sum).toFixed(1) + '%';
             return label + ": " + percentage;
           }
         }

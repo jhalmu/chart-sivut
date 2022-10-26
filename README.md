@@ -35,6 +35,14 @@
 
 ### 21.10.22
 
-- Added more charts and new plugin datalabels. I'm focusing now only ChartJS. Noticed that datalabels put numbers for all charts in "same page". If you do not want numbers, you have to disable it from chart options. Tehe is al so code which changes numbers in labels to percents.
+- Added more charts and new plugin datalabels. I'm focusing now only ChartJS. Noticed that datalabels put numbers for all charts in "same page". If you do not want numbers, you have to disable it from chart options. There is al so code which changes numbers in labels to percents.
 - Added Manual to show in About -page.
+  
+### 24.10.22
+
+- Actually so far this has not been very DRY approach, I think. I could move some options to one common file, but there is allways exceptions. It might be possible to change folder thinking, so that base charts are all in same folder exl. exceptions and so on. Or all charts which can have same options. There is al so approach that all are in same file, but that was discouraged by client.
+
+### 26.10.22
+
+- Implementing chart for client. Actually I can not use these, only knowledge of making these. And recgarts if needed.
   
