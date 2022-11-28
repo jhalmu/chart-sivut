@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from "react";
 const raw = require('../../DOCS.txt');
 
 function DocsReader() {
@@ -27,7 +27,7 @@ const About = () => {
         <a
           href="https://www.linkedin.com/in/juhahalmu/"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           data-tooltip="To my LinkedIn page"
           aria-label="to my linkedin page"
         >

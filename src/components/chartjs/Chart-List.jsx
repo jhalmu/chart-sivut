@@ -1,3 +1,4 @@
+import React from "react";
 // Charts
 import BaseAreaChart from './Areas/BaseAreaChart'
 import DoubleAreaChart from './Areas/DoubleAreaChart'
